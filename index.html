@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+<!-- these are body section of the web page  -->
+  <body>
+    
+    <div id="quiz-container">
+    <!-- these are first image use in the webpage  -->
+        <img src="assets/logo.jpeg" alt="testbook-logo" />
+      <h1 id="header">Hello User!</h1>
+      <h2>Enter Your Name to Continue the Quiz</h2>
+      <!-- these are form tag  -->
+      <form onsubmit="getName(event)">
+        <input type="text" placeholder="Enter your name...." id="user-name" />
+        <button type="submit" id="submit-btn">Enter</button>
+      </form>
+      <div id="welcome-note"></div>
+      <p class="notification">
+        You will have 10 seconds to answer each question
+      </p>
+      <hr />
+      <!-- these are four Category used in my quiz-app -->
+      <h1 id="header">Select Category</h1>
+      <button
+        value="Pipes and Cisterns"
+        onclick="getCategory(event)"
+        class="select-category-btn"
+      >
+        Pipes and Cisterns
+      </button>
+      <button
+        value="Probability"
+        onclick="getCategory(event)"
+        class="select-category-btn"
+      >
+        Probability
+      </button>
+      <button
+        value="Problem On Ages"
+        onclick="getCategory(event)"
+        class="select-category-btn"
+        id="Category-btn-third"
+      >
+        Problem On Ages
+      </button>
+      <button
+        value="Profit and Loss"
+        onclick="getCategory(event)"
+        class="select-category-btn"
+        id="Category-btn-fourth"
+      >
+        Profit and Loss
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
